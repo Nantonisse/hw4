@@ -13,8 +13,7 @@
     <%= form.label "posted_on" %>
     <%= form.date_field "posted_on" %>
   </p>
-  <p>
-    <%= form.submit %>
-  </p>
+    
+  <button type="button" class="btn btn-outline-primary"><%= form.submit %></button>
   <%= form.hidden_field "place_id" %>
 <% end %>
