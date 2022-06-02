@@ -31,6 +31,7 @@ Rails.application.configure do
     config.action_controller.perform_caching = false
 
     config.cache_store = :null_store
+
   end
 
   # Print deprecation notices to the Rails logger.
@@ -67,4 +68,6 @@ Rails.application.configure do
   
   # So we don't get the "Cannot render console" message in Gitpod
   config.web_console.whiny_requests = false
+
+  config.active_storage.service = :local
 end

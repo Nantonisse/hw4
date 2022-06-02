@@ -13,6 +13,10 @@
     <%= form.label "posted_on" %>
     <%= form.date_field "posted_on" %>
   </p>
+  <p>
+      <%= form.label "uploaded_image", :class => "form-label" %>
+      <%= form.file_field "uploaded_image", :accept => "image/png,image/jpg,image/jpeg,image/gif", :class => "form-control" %>
+  </p>
     
   <button type="button" class="btn btn-outline-primary"><%= form.submit %></button>
   <%= form.hidden_field "place_id" %>
